@@ -3,18 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <title>Image Upload</title>
-  <script>
-    UPLOADCARE_PUBLIC_KEY = "demopublickey"; /* ČIA ĮDĖSIM TAVO REALŲ KEY VĖLIAU */
-  </script>
-  <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
-</head>
-<body style="display:flex; justify-content:center; align-items:center; height:100vh;">
 
+  <script>
+    UPLOADCARE_PUBLIC_KEY = d269c9ad827eaad0dfae; 
+  </script>
+
+  <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
+
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: sans-serif;
+      background: #f5f5f5;
+    }
+    .upload-box {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<div class="upload-box">
+  <h2>Įkelkite savo nuotrauką</h2>
   <input type="hidden"
          role="uploadcare-uploader"
          data-images-only="true"
-         data-crop="4:3"
          data-clearable="false" />
+</div>
 
 </body>
 </html>
